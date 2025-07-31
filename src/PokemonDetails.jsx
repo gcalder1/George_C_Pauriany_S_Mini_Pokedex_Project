@@ -22,11 +22,11 @@ export const PokemonDetails = () => {
     if (isLoading) return <p>Loading...</p>;
 
     if (isError) return <p>Something went wrong!</p>;
-
+    //flex flex-col items-center justify-center min-h-screen p-5 border border-red-500 rounded-lg
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen p-5">
+        <div className="flex flex-col items-center justify-center p-5 rounded-lg w-99 shadow-md">
             <h1 className="font-semibold">{data.name}</h1>
-            <img src={data.sprites.front_default} alt={data.name} />
+            <img className="w-40 h-auto" src={data.sprites.front_default} alt={data.name} />
             <p>Height: {data.height}</p>
             <p>Weight: {data.weight}</p>
         </div>
