@@ -3,7 +3,7 @@
 Paired Exercise: Mini Pokedex 
 Project
 
-This repository contains the finished project of our Mini Pokedex exercise.
+This repository contains the finished project of our Mini Pokedex exercise. You can also see the stylized version, completed via the tailwind challenge.
 
 Dependencies used:
 ```
