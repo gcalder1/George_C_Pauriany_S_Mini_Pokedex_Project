@@ -25,7 +25,7 @@ export const PokemonDetails = () => {
 
     return (
         <div className="flex flex-col items-center justify-center min-h-screen p-5">
-            <h1 className="font-bold">{data.name}</h1>
+            <h1 className="font-semibold">{data.name}</h1>
             <img src={data.sprites.front_default} alt={data.name} />
             <p>Height: {data.height}</p>
             <p>Weight: {data.weight}</p>
