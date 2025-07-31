@@ -31,12 +31,16 @@ export default function Home () {
                     </li>
                 ))}
             </ul>
-            <div>
-                <button onClick={() => setPage((p) => Math.max(p - 1, 0))} disabled={page === 0}>Previous</button>
+            <div className="flex justify-between pt-4">
+                <button onClick={() => setPage((p) => Math.max(p - 1, 0))} disabled={page === 0} 
+                className="px-4 py-2 bg-blue-500 text-white rounded"    
+                >Previous</button>
                 <span>
                     Page {page + 1}
                 </span>
-                <button onClick={() => setPage((p) => p + 1)} disabled={!data.next}>Next</button>
+                <button onClick={() => setPage((p) => p + 1)} disabled={!data.next}
+                className="px-4 py-2 bg-blue-500 text-white rounded" 
+                >Next</button>
             </div>
         </div>
     )
